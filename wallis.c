@@ -26,9 +26,12 @@ int main(void) {
 {
   float wallis_pi(int)
   {
-    for (n=1;n<=i;n++){
-      wallis_pi=4*n*n/(4*n*n-1);
-      wallis_pi= wallis_pi*((4*(n+1)*(n+1))/(4*(n+1)*(n+1)-1));
+    int n;
+    printf("The number of itteration is:");
+      scanf("%d",&n);
+    for (i=1;i<=n;i++){
+      wallis_pi=4*i*i/(4*i*i-1);
+      wallis_pi= wallis_pi*((4*(i+1)*(i+1))/(4*(i+1)*(i+1)-1));
        return (wallis_pi)
       }
   }
