@@ -26,5 +26,15 @@ int main(void) {
 {
   float wallis_pi(int)
   {
-    
+    for (n=1;n<=i;n++){
+      wallis_pi=4*n*n/(4*n*n-1);
+      wallis_pi= wallis_pi*((4*(n+1)*(n+1))/(4*(n+1)*(n+1)-1));
+       return (wallis_pi)
+      }
+  }
+}
+      
+
+       
+       
 
