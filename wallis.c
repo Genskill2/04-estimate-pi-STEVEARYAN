@@ -24,17 +24,18 @@ int main(void) {
   }
 }
 {
-  float wallis_pi(int)
+  float wallis_pi(int n) 
   {
-    int n;
+    float m=1;
     printf("The number of itteration is:");
       scanf("%d",&n);
-    for (i=1;i<=n;i++){
-      wallis_pi=4*i*i/(4*i*i-1);
-      wallis_pi= wallis_pi*((4*(i+1)*(i+1))/(4*(i+1)*(i+1)-1));
-       return (wallis_pi)
+    for ( int i=1;i<=n;i++){
+      m=m*4*i*i/(4*i*i-1);
+       
       }
-  }
+      return(2*m);
+      }
+  
 }
       
 
