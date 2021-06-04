@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int);  
+float wallis_pi(int);
 
 int main(void) {
   float pi;
@@ -24,17 +24,15 @@ int main(void) {
   }
 }
 
-  float wallis_pi(int n) 
-  {
-    float m=1.0;
-    for ( int i=1;i<=n;i++)
+float wallis_pi(int n)
+ {
+    float s=1.0;
+    for (int i=1; i<=n; i++)
     {
-        m = m*(4*i*i)/((4*i*i)-1);
-       
-      }
-      return(2*m);
-  }
-  
+        s=s*(4*i*i)/((4*i*i)-1);
+    }
+   return (2*s); 
+ }
 
       
 
