@@ -37,23 +37,28 @@ int main(void) {
       abort();
     }
   }
-  float mc_pi(int n);
-  x=frandom();
-  y=frandom();
-  float d=(x**2 + y**2);
-  for (int count=0;count<=n;count++){
-     if d<=1;
-    return(1)
-      else;
-    return(0)
-    }
-  return(count);
-  float pi=4*count/n;
-  return (pi)
-      
-  }
-  
 }
+loat mc_pi(int n)
+  {
+  int count=0;
+  float pi;
+  
+  for (int i=0;i<n;i++){
+       float x=frandom();
+       float y=frandom();
+       float d=(pow(x,2)+ pow(y,2));
+     if (d<=1){
+           return(count++);
+    }
+     pi=(double) count/n *4;
+    
+    return(pi);
+    }
+   }
+ 
+ 
+ 
+  
 
 
 
