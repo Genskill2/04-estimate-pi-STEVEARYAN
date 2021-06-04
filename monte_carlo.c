@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#define random rand
+#define srandom srand
+
 
 float mc_pi(int);
 
@@ -38,27 +41,23 @@ int main(void) {
     }
   }
 }
+
 float mc_pi(int n)
-  {
-  int count=0;
-  float pi;
-  
-  for (int i=0;i<n;i++){
-       float x=frandom();
-       float y=frandom();
-       float d=(pow(x,2)+ pow(y,2));
-     if (d<=1){
-           return(count++);
-    }
-     pi=(double) count/n *4;
-    
-    return(pi);
-    }
-   }
- 
- 
- 
-  
+{  float pi,x,y,z;
+int count=0;
+    for(int i = 0; i < n; ++i) {
 
+     x = frandom();
 
+     y = frandom();
+
+     z = x * x + y * y;
+
+     if( z <= 1 ) count++;
+ }
+
+ pi = (double) count / n * 4;
+
+ return pi;
+}
 
