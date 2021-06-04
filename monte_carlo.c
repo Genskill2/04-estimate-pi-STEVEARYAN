@@ -38,7 +38,7 @@ int main(void) {
     }
   }
 }
-loat mc_pi(int n)
+float mc_pi(int n)
   {
   int count=0;
   float pi;
